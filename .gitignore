@@ -32,6 +32,7 @@ local.properties
 *.hprof
 .cxx/
 *.keystore
+*.jks
 !debug.keystore
 
 # node.js
@@ -64,3 +65,6 @@ yarn-error.log
 
 # testing
 /coverage
+
+# Expo
+.expo

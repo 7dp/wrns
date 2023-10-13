@@ -1,0 +1,8 @@
+.bundle
+android
+ios
+node_modules
+vendor
+.vscode
+.idea
+package.json
