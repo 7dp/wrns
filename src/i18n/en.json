@@ -1,0 +1,28 @@
+{
+  "common": {
+    "typeHere": "Type here",
+    "loading": "Loading...",
+    "failedToLoadData": "Failed to load data",
+    "youOffline": "You are offline. Check your internet connection."
+  },
+  "imagePicker": {
+    "cancel": "Cancel",
+    "apply": "Apply"
+  },
+  "errorFallback": {
+    "somethingWentWrong": "🙏\nSorry, something went wrong with the app",
+    "error": "Error:",
+    "backToApp": "Back to app"
+  },
+  "login": {
+    "placeholderEmail": "youremail@email.com",
+    "placeholderPassword": "Type your password",
+    "welcome": "Welcome!",
+    "password": "Password",
+    "email": "Email",
+    "login": "Login"
+  },
+  "home": {
+    "logout": "Logout"
+  }
+}
