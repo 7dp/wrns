@@ -1,12 +1,14 @@
-import { navigationContainerRef } from '@/app'
+import { useNavigation } from '@/hooks'
 import { Colors, commonStyles, size, windowHeight } from '@/styles'
 import React from 'react'
 import { StyleSheet, TouchableHighlight } from 'react-native'
 import { VectorIcon } from './vector-icon'
 
 const ChuckerButton = () => {
+  const navigation = useNavigation()
+
   const onPress = () => {
-    navigationContainerRef.navigate('Chucker')
+    navigation.navigate('Chucker')
   }
 
   return (

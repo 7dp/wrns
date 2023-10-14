@@ -1,10 +1,7 @@
 import notifee, { EventType } from '@notifee/react-native'
 import crashlytics from '@react-native-firebase/crashlytics'
 import messaging from '@react-native-firebase/messaging'
-import {
-  NavigationContainer,
-  createNavigationContainerRef,
-} from '@react-navigation/native'
+import { NavigationContainer } from '@react-navigation/native'
 import { useKeepAwake } from 'expo-keep-awake'
 import React, { FC, useEffect } from 'react'
 import { ErrorBoundary } from 'react-error-boundary'
@@ -15,7 +12,7 @@ import RNToast, { ToastConfig } from 'react-native-toast-message'
 import { Provider } from 'react-redux'
 import { PersistGate } from 'redux-persist/integration/react'
 import { ChuckerButton, ErrorFallback, NetworkInfo, Toast } from './components'
-import { StackNavigator, StackParams } from './navigator'
+import { StackNavigator, navigationContainerRef } from './navigator'
 import {
   Notification,
   NotificationPressHandler,
@@ -24,8 +21,6 @@ import {
 import { persistor, store } from './store'
 
 enableScreens()
-
-export const navigationContainerRef = createNavigationContainerRef<StackParams>()
 
 const toastConfig: ToastConfig = {
   error: (props) => <Toast toastProps={props} type="error" />,

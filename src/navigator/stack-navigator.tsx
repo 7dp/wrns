@@ -1,10 +1,13 @@
 import { useAppSelector } from '@/store'
 import { selectIsLoggedIn } from '@/store/slices'
+import { createNavigationContainerRef } from '@react-navigation/native'
 import { createNativeStackNavigator } from '@react-navigation/native-stack'
 import React, { FC } from 'react'
 import { defaultScreenOptions } from './screen-options'
 import { StackParams } from './stack-params'
 import { authStackScreens, mainStackScreens } from './stack-screens'
+
+const navigationContainerRef = createNavigationContainerRef<StackParams>()
 
 const Stack = createNativeStackNavigator<StackParams>()
 
@@ -37,4 +40,4 @@ const StackNavigator: FC = () => {
   )
 }
 
-export { StackNavigator }
+export { StackNavigator, navigationContainerRef }

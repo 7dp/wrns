@@ -1,4 +1,4 @@
-import { navigationContainerRef } from '@/app'
+import { navigationContainerRef } from '@/navigator'
 import { NotificationType } from './types'
 
 const navigateTo: Record<NotificationType, () => void> = {
