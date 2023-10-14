@@ -15,6 +15,8 @@
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		885F56952AD7C3C700F6F3A6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 885F56942AD7C3C700F6F3A6 /* GoogleService-Info.plist */; };
 		88736F852AD50B7700B8D3A0 /* Expo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 88736F842AD50B7700B8D3A0 /* Expo.plist */; };
+		88BA78242ADA46F100BC24D7 /* MaterialCommunityIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 88BA78222ADA46F100BC24D7 /* MaterialCommunityIcons.ttf */; };
+		88BA78252ADA46F100BC24D7 /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 88BA78232ADA46F100BC24D7 /* MaterialIcons.ttf */; };
 		945008F6E15B075B42F08F26 /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4984577DE97967C536114423 /* ExpoModulesProvider.swift */; };
 		B8F9A556CAF1FCEA447550CC /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173C26D3C09A38A1D80663F8 /* ExpoModulesProvider.swift */; };
 		EA3350CA2C7078DE5C61482C /* Pods_Starter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 505AE8D370773348C0B8D6AC /* Pods_Starter.framework */; };
@@ -47,11 +49,11 @@
 		5709B34CF0A7D63546082F79 /* Pods-Starter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Starter.release.xcconfig"; path = "Target Support Files/Pods-Starter/Pods-Starter.release.xcconfig"; sourceTree = "<group>"; };
 		5B7EB9410499542E8C5724F5 /* Pods-Starter-StarterTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Starter-StarterTests.debug.xcconfig"; path = "Target Support Files/Pods-Starter-StarterTests/Pods-Starter-StarterTests.debug.xcconfig"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = Starter/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		8837002A2AD7A16B001573E0 /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = MaterialCommunityIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf"; sourceTree = "<group>"; };
-		8837002B2AD7A16B001573E0 /* MaterialIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = MaterialIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf"; sourceTree = "<group>"; };
 		885F56942AD7C3C700F6F3A6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "Starter/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		885F56962AD7F0B400F6F3A6 /* Starter.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = Starter.entitlements; path = Starter/Starter.entitlements; sourceTree = "<group>"; };
 		88736F842AD50B7700B8D3A0 /* Expo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Expo.plist; path = Starter/Supporting/Expo.plist; sourceTree = "<group>"; };
+		88BA78222ADA46F100BC24D7 /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MaterialCommunityIcons.ttf; sourceTree = "<group>"; };
+		88BA78232ADA46F100BC24D7 /* MaterialIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MaterialIcons.ttf; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-Starter-StarterTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Starter-StarterTests.release.xcconfig"; path = "Target Support Files/Pods-Starter-StarterTests/Pods-Starter-StarterTests.release.xcconfig"; sourceTree = "<group>"; };
 		96445CD754A9529017C18F6B /* Pods_Starter_StarterTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Starter_StarterTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
@@ -165,8 +167,8 @@
 		88367F382AD6C3630010BA8F /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
-				8837002A2AD7A16B001573E0 /* MaterialCommunityIcons.ttf */,
-				8837002B2AD7A16B001573E0 /* MaterialIcons.ttf */,
+				88BA78222ADA46F100BC24D7 /* MaterialCommunityIcons.ttf */,
+				88BA78232ADA46F100BC24D7 /* MaterialIcons.ttf */,
 			);
 			name = Fonts;
 			sourceTree = "<group>";
@@ -297,6 +299,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				88736F852AD50B7700B8D3A0 /* Expo.plist in Resources */,
+				88BA78242ADA46F100BC24D7 /* MaterialCommunityIcons.ttf in Resources */,
+				88BA78252ADA46F100BC24D7 /* MaterialIcons.ttf in Resources */,
 				885F56952AD7C3C700F6F3A6 /* GoogleService-Info.plist in Resources */,
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
