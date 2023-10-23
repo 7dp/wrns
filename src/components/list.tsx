@@ -1,4 +1,4 @@
-import { commonStyles, size } from '@/styles'
+import { commonStyles } from '@/styles'
 import { SerializedError } from '@reduxjs/toolkit'
 import { FetchBaseQueryError } from '@reduxjs/toolkit/dist/query'
 import { ContentStyle, FlashList, FlashListProps } from '@shopify/flash-list'
@@ -96,7 +96,7 @@ const _List = <T,>(props: Props<T>, ref: ForwardedRef<FlashList<T>>) => {
   } else
     contentContainerStyle = {
       ...style.listContentContainerStyle,
-      paddingBottom: bottom || size['20px'],
+      paddingBottom: bottom || 20,
       ...listProps?.contentContainerStyle,
     }
 
@@ -124,7 +124,7 @@ const _List = <T,>(props: Props<T>, ref: ForwardedRef<FlashList<T>>) => {
 
 const style = StyleSheet.create({
   listContentContainerStyle: {
-    paddingLeft: size['16px'],
+    paddingLeft: 16,
   } as ContentStyle,
 })
 

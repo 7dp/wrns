@@ -1,5 +1,5 @@
 import { t } from '@/i18n'
-import { Colors, commonStyles, size, typography } from '@/styles'
+import { Colors, commonStyles, typography } from '@/styles'
 import React from 'react'
 import { FallbackProps } from 'react-error-boundary'
 import { StyleSheet, Text, TextStyle, View } from 'react-native'
@@ -28,7 +28,7 @@ const ErrorFallback = (props: FallbackProps) => {
 
 const style = StyleSheet.create({
   button: {
-    marginTop: size['32px'],
+    marginTop: 32,
   },
 
   description: {
@@ -40,14 +40,14 @@ const style = StyleSheet.create({
   errorContainer: {
     ...commonStyles.borderRadius,
     backgroundColor: Colors.whitesmoke,
-    marginTop: size['8px'],
-    padding: size['8px'],
+    marginTop: 8,
+    padding: 8,
   },
 
   root: {
     ...commonStyles.centerVertical,
     ...commonStyles.root,
-    padding: size['32px'],
+    padding: 32,
   },
 
   title: {

@@ -1,4 +1,4 @@
-import { Colors, commonStyles, size, typography } from '@/styles'
+import { Colors, commonStyles, typography } from '@/styles'
 import React from 'react'
 import {
   ActivityIndicator,
@@ -64,8 +64,8 @@ const Button = (iProps: Props) => {
   let pressableStyle = {
     ...style.pressableContainedType,
     backgroundColor: isDisabled ? Colors.black25 : Colors.dodgerBlue,
-    elevation: isDisabled ? size['0px'] : size['4px'],
-    shadowOpacity: isDisabled ? size['0px'] : 0.3,
+    elevation: isDisabled ? 0 : 4,
+    shadowOpacity: isDisabled ? 0 : 0.3,
   } as ViewStyle
 
   const pressableOutlineStyle = {
@@ -100,14 +100,14 @@ const baseStyle = StyleSheet.create({
   pressable: {
     ...commonStyles.borderRadius,
     ...commonStyles.center,
-    height: size['48px'],
-    paddingHorizontal: size['20px'],
+    height: 48,
+    paddingHorizontal: 20,
   } as ViewStyle,
 })
 
 const style = StyleSheet.create({
   indicator: {
-    paddingEnd: size['8px'],
+    paddingEnd: 8,
   } as ViewStyle,
 
   labelContainedType: {
@@ -145,8 +145,8 @@ const style = StyleSheet.create({
 
   pressableTextType: {
     ...commonStyles.center,
-    paddingHorizontal: size['4px'],
-    paddingVertical: size['2px'],
+    paddingHorizontal: 4,
+    paddingVertical: 2,
   },
 })
 

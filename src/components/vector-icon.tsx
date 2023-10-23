@@ -1,4 +1,3 @@
-import { size } from '@/styles'
 import React, { memo } from 'react'
 import { IconProps } from 'react-native-vector-icons/Icon'
 import MateriaCommunityIcon from 'react-native-vector-icons/MaterialCommunityIcons'
@@ -11,9 +10,9 @@ type Props = {
 
 const VectorIcon = memo(({ props, source }: Props) => {
   if (source === 'material-community') {
-    return <MateriaCommunityIcon size={size['20px']} {...props} />
+    return <MateriaCommunityIcon size={20} {...props} />
   }
-  return <MaterialIcon size={size['20px']} {...props} />
+  return <MaterialIcon size={20} {...props} />
 })
 
 export { VectorIcon }

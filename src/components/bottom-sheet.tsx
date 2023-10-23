@@ -1,4 +1,4 @@
-import { Colors, size } from '@/styles'
+import { Colors } from '@/styles'
 import RNBottomSheet, {
   BottomSheetBackdrop,
   BottomSheetBackdropProps,
@@ -6,7 +6,7 @@ import RNBottomSheet, {
   BottomSheetView,
   useBottomSheetDynamicSnapPoints,
 } from '@gorhom/bottom-sheet'
-import React, { forwardRef, memo, ReactNode, useCallback, useMemo } from 'react'
+import React, { ReactNode, forwardRef, memo, useCallback, useMemo } from 'react'
 import { Keyboard, StyleSheet, ViewStyle } from 'react-native'
 import {
   SafeAreaView,
@@ -42,8 +42,8 @@ const _BottomSheet = forwardRef<RNBottomSheet, Props>((props, ref) => {
   }, [])
 
   const safeAreaStyle: ViewStyle = {
-    margin: size['20px'],
-    marginBottom: bottom ? size['0px'] : size['20px'],
+    margin: 20,
+    marginBottom: bottom ? 0 : 20,
   }
 
   const renderBackdrop = useCallback(
@@ -83,12 +83,12 @@ const _BottomSheet = forwardRef<RNBottomSheet, Props>((props, ref) => {
 
 const style = StyleSheet.create({
   background: {
-    borderBottomLeftRadius: size['0px'],
-    borderBottomRightRadius: size['0px'],
+    borderBottomLeftRadius: 0,
+    borderBottomRightRadius: 0,
   },
   handleIndicator: {
     backgroundColor: Colors.black34,
-    width: size['40px'],
+    width: 40,
   },
 })
 

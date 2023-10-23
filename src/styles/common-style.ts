@@ -1,5 +1,4 @@
 import { Colors } from './colors'
-import { size } from './size'
 import { StyleSheet, TextStyle, ViewStyle } from 'react-native'
 
 const numberOfLines = 6
@@ -7,11 +6,11 @@ const textHeight = 16.5
 
 const commonStyles = StyleSheet.create({
   absolute: {
-    bottom: size['0px'],
-    left: size['0px'],
+    bottom: 0,
+    left: 0,
     position: 'absolute',
-    right: size['0px'],
-    top: size['0px'],
+    right: 0,
+    top: 0,
   } as ViewStyle,
 
   background: {
@@ -20,11 +19,11 @@ const commonStyles = StyleSheet.create({
 
   borderLine: {
     borderColor: Colors.black25,
-    borderWidth: size['1px'],
+    borderWidth: 1,
   } as ViewStyle,
 
   borderRadius: {
-    borderRadius: size['8px'],
+    borderRadius: 8,
   } as ViewStyle,
 
   center: {
@@ -52,18 +51,18 @@ const commonStyles = StyleSheet.create({
   } as ViewStyle,
 
   listFooterLoadingIndicator: {
-    margin: size['20px'],
-    marginBottom: size['0px'],
+    margin: 20,
+    marginBottom: 0,
   },
 
   multilineTextInput: {
     height: textHeight * numberOfLines,
-    paddingBottom: size['10px'],
-    paddingTop: size['10px'],
+    paddingBottom: 10,
+    paddingTop: 10,
   } as TextStyle,
 
   pagePadding: {
-    padding: size['20px'],
+    padding: 20,
   } as ViewStyle,
 
   root: {
@@ -78,7 +77,7 @@ const commonStyles = StyleSheet.create({
   screen: {
     backgroundColor: Colors.white,
     flex: 1,
-    padding: size['20px'],
+    padding: 20,
   },
 
   shadow: {
@@ -86,15 +85,15 @@ const commonStyles = StyleSheet.create({
     elevation: 3,
     shadowColor: Colors.black25,
     shadowOffset: {
-      height: size['2px'],
-      width: size['0px'],
+      height: 2,
+      width: 0,
     },
     shadowOpacity: 0.3,
-    shadowRadius: size['4px'],
+    shadowRadius: 4,
   } as ViewStyle,
 
   spaceBetweenListItem: {
-    marginTop: size['16px'],
+    marginTop: 16,
   } as ViewStyle,
 })
 

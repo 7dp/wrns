@@ -1,4 +1,4 @@
-import { Colors, commonStyles, size, typography } from '@/styles'
+import { Colors, commonStyles, typography } from '@/styles'
 import { BottomSheetTextInput } from '@gorhom/bottom-sheet'
 import React, {
   ForwardedRef,
@@ -81,7 +81,7 @@ const TextInput = memo(
     const inputContainerStyle = {
       ...style.inputContainer,
       borderColor: getBorderColor,
-      marginTop: label ? size['8px'] : size['0px'],
+      marginTop: label ? 8 : 0,
     } as ViewStyle
 
     const labelStyle = {
@@ -102,7 +102,7 @@ const TextInput = memo(
           onPress={isPassword ? onVisibilityTogglePress : undefined}
           style={style.button}
         >
-          <VectorIcon props={{ color: Colors.black50, name: icon, size: size['24px'] }} />
+          <VectorIcon props={{ color: Colors.black50, name: icon, size: 24 }} />
         </TouchableOpacity>
       )
     }, [isPassword, secureTextEntry, trailingIcon])
@@ -166,36 +166,36 @@ const baseStyle = StyleSheet.create({
   } as TextStyle,
 })
 
-const lineHeight = baseStyle.currentTypography.lineHeight ?? size['17px']
+const lineHeight = baseStyle.currentTypography.lineHeight ?? 17
 
 const styles = (numberOfLines: number) =>
   StyleSheet.create({
     button: {
       ...commonStyles.center,
-      height: size['48px'],
-      marginEnd: size['8px'],
-      width: size['32px'],
+      height: 48,
+      marginEnd: 8,
+      width: 32,
     } as ViewStyle,
 
     input: {
       ...baseStyle.currentTypography,
       ...commonStyles.flex,
-      minHeight: size['48px'],
-      paddingHorizontal: size['12px'],
-      paddingVertical: size['2px'],
+      minHeight: 48,
+      paddingHorizontal: 12,
+      paddingVertical: 2,
     },
 
     inputContainer: {
       ...commonStyles.centerRow,
-      borderRadius: size['10px'],
-      borderWidth: size['1px'],
+      borderRadius: 10,
+      borderWidth: 1,
     },
 
     leadingText: {
       ...baseStyle.currentTypography,
       color: Colors.black82,
-      marginEnd: -size['4px'],
-      marginStart: size['12px'],
+      marginEnd: -4,
+      marginStart: 12,
     },
 
     leadingTextContainer: {
@@ -204,19 +204,19 @@ const styles = (numberOfLines: number) =>
 
     multiline: {
       height: lineHeight * numberOfLines + lineHeight / 2,
-      paddingVertical: size['8px'],
+      paddingVertical: 8,
     },
 
     trailingText: {
       ...baseStyle.currentTypography,
       color: Colors.black82,
-      marginEnd: size['16px'],
-      marginStart: size['12px'],
+      marginEnd: 16,
+      marginStart: 12,
     },
 
     trailingTextContainer: {
       borderLeftColor: Colors.black34,
-      borderLeftWidth: size['1px'],
+      borderLeftWidth: 1,
       justifyContent: 'center',
     } as ViewStyle,
   })

@@ -1,9 +1,9 @@
-import { Colors, size } from '@/styles'
+import { Colors } from '@/styles'
 import { StyleSheet, TextStyle } from 'react-native'
 
 const style = StyleSheet.create({
   listItem: {
-    paddingVertical: size['12px'],
+    paddingVertical: 12,
   },
 
   logoutText: {

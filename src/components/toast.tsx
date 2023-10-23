@@ -1,4 +1,4 @@
-import { Colors, commonStyles, size } from '@/styles'
+import { Colors, commonStyles } from '@/styles'
 import React, { memo } from 'react'
 import { StyleSheet, Text, TextStyle, View } from 'react-native'
 import { ToastConfigParams } from 'react-native-toast-message'
@@ -18,7 +18,7 @@ const Toast = memo(({ type, toastProps }: Props) => {
         props={{
           color: isInfo ? Colors.dodgerBlue : Colors.red,
           name: isInfo ? 'check-circle' : 'alert-circle',
-          size: size['20px'],
+          size: 20,
         }}
         source="material-community"
       />
@@ -35,15 +35,15 @@ const style = StyleSheet.create({
     ...commonStyles.centerRow,
     ...commonStyles.flex,
     ...commonStyles.shadow,
-    paddingHorizontal: size['12px'],
-    paddingVertical: size['16px'],
+    paddingHorizontal: 12,
+    paddingVertical: 16,
     width: '90%',
   },
 
   text: {
     ...commonStyles.flex,
     color: Colors.black82,
-    marginStart: size['8px'],
+    marginStart: 8,
   } as TextStyle,
 })
 

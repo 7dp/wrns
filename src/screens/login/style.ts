@@ -1,13 +1,13 @@
-import { commonStyles, size } from '@/styles'
+import { commonStyles } from '@/styles'
 import { StyleSheet } from 'react-native'
 
 const style = StyleSheet.create({
   button: {
-    marginTop: size['48px'],
+    marginTop: 48,
   },
 
   passwordInput: {
-    marginTop: size['16px'],
+    marginTop: 16,
   },
 
   root: {

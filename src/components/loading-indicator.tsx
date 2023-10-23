@@ -1,4 +1,4 @@
-import { Colors, size } from '@/styles'
+import { Colors } from '@/styles'
 import React from 'react'
 import {
   ActivityIndicator,
@@ -24,7 +24,7 @@ const LoadingIndicator = ({ props }: Props) => {
 
 const style = StyleSheet.create({
   indicator: {
-    margin: size['20px'],
+    margin: 20,
   } as ViewStyle,
 })
 

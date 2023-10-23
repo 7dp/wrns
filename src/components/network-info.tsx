@@ -1,5 +1,5 @@
 import { t } from '@/i18n'
-import { Colors, commonStyles, size } from '@/styles'
+import { Colors, commonStyles } from '@/styles'
 import NetInfo, { NetInfoState } from '@react-native-community/netinfo'
 import React, { useEffect, useState } from 'react'
 import { StyleSheet, Text, TextStyle, View, ViewStyle } from 'react-native'
@@ -39,7 +39,7 @@ const NetworkInfo = () => {
           props={{
             color: Colors.white,
             name: 'cloud-off',
-            size: size['20px'],
+            size: 20,
           }}
         />
         <Text disabled style={style.textNetworkChange}>
@@ -54,8 +54,8 @@ const style = StyleSheet.create({
     ...commonStyles.center,
     ...commonStyles.row,
     backgroundColor: Colors.red,
-    paddingHorizontal: size['20px'],
-    paddingVertical: size['4px'],
+    paddingHorizontal: 20,
+    paddingVertical: 4,
     width: '100%',
   },
 
@@ -68,7 +68,7 @@ const style = StyleSheet.create({
 
   textNetworkChange: {
     color: Colors.white,
-    marginStart: size['8px'],
+    marginStart: 8,
   } as TextStyle,
 })
 

@@ -1,5 +1,5 @@
 import { useNavigation } from '@/hooks'
-import { Colors, commonStyles, size, windowHeight } from '@/styles'
+import { Colors, commonStyles, windowHeight } from '@/styles'
 import React from 'react'
 import { StyleSheet, TouchableHighlight } from 'react-native'
 import { VectorIcon } from './vector-icon'
@@ -26,8 +26,8 @@ const style = StyleSheet.create({
   button: {
     ...commonStyles.shadow,
     backgroundColor: Colors.white,
-    borderRadius: size['20px'],
-    padding: size['8px'],
+    borderRadius: 20,
+    padding: 8,
     position: 'absolute',
     top: windowHeight / 3,
   },

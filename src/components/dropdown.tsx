@@ -1,5 +1,5 @@
 import { t } from '@/i18n'
-import { Colors, commonStyles, size, typography } from '@/styles'
+import { Colors, commonStyles, typography } from '@/styles'
 import React, {
   Dispatch,
   SetStateAction,
@@ -72,7 +72,7 @@ const Dropdown = memo((iProps: Props) => {
       <MaterialIcon
         color={Colors.black50}
         name={status === 'closed' ? 'arrow-drop-down' : 'arrow-drop-up'}
-        size={size['32px']}
+        size={32}
         style={style.arrowIcon}
       />
     )
@@ -121,8 +121,8 @@ const Dropdown = memo((iProps: Props) => {
 
 const style = StyleSheet.create({
   arrowIcon: {
-    marginEnd: size['8px'],
-    marginStart: size['16px'],
+    marginEnd: 8,
+    marginStart: 16,
   },
 
   button: {
@@ -133,25 +133,25 @@ const style = StyleSheet.create({
   dropdown: {
     ...commonStyles.borderRadius,
     ...commonStyles.shadow,
-    borderBottomLeftRadius: size['8px'],
-    borderBottomRightRadius: size['8px'],
-    marginBottom: size['20px'],
-    marginTop: size['4px'],
-    paddingBottom: size['0px'],
+    borderBottomLeftRadius: 8,
+    borderBottomRightRadius: 8,
+    marginBottom: 20,
+    marginTop: 4,
+    paddingBottom: 0,
   },
 
   dropdownContainer: {
     ...commonStyles.borderLine,
     ...commonStyles.borderRadius,
     backgroundColor: Colors.white,
-    height: size['48px'],
+    height: 48,
     justifyContent: 'center',
-    marginTop: size['8px'],
+    marginTop: 8,
   },
 
   dropdownItemText: {
     ...typography.heading4,
-    paddingHorizontal: size['12px'],
+    paddingHorizontal: 12,
   },
 
   dropdownTextHighlight: {
@@ -168,37 +168,37 @@ const style = StyleSheet.create({
     ...commonStyles.borderRadius,
     backgroundColor: Colors.white,
     justifyContent: 'center',
-    paddingHorizontal: size['12px'],
-    paddingVertical: size['12px'],
+    paddingHorizontal: 12,
+    paddingVertical: 12,
   },
 
   placeholder: {
     ...commonStyles.flex,
     ...typography.placeholder,
-    marginHorizontal: size['12px'],
+    marginHorizontal: 12,
   },
 
   root: {
-    marginTop: size['20px'],
+    marginTop: 20,
   },
 
   row: {
     justifyContent: 'center',
-    paddingHorizontal: size['12px'],
-    paddingVertical: size['12px'],
+    paddingHorizontal: 12,
+    paddingVertical: 12,
   },
 
   rowSelected: {
     backgroundColor: Colors.dodgerBlue25,
     justifyContent: 'center',
-    paddingHorizontal: size['12px'],
-    paddingVertical: size['12px'],
+    paddingHorizontal: 12,
+    paddingVertical: 12,
   },
 
   rowText: {
     ...commonStyles.flex,
     ...typography.heading4,
-    marginVertical: size['1px'],
+    marginVertical: 1,
   },
 
   rowTextSelected: {
@@ -210,7 +210,7 @@ const style = StyleSheet.create({
   value: {
     ...commonStyles.flex,
     ...typography.heading4,
-    marginHorizontal: size['12px'],
+    marginHorizontal: 12,
   },
 })
 
