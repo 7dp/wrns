@@ -1,3 +1,5 @@
+[![End the Palestinians Genocide](https://img.shields.io/badge/%F0%9F%87%B5%F0%9F%87%B8_End_the_Palestinians_Genocide-techforpalestine.org-000000?labelColor=009e53&color=D83838)](https://techforpalestine.org/learn-more)
+
 # WRNS (Wich React Native Starter)
 
 🥤Just another boring bare React Native template.
