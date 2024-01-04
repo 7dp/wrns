@@ -23,5 +23,5 @@
   },
   "exclude": ["node_modules"],
   "include": ["index.js", "src", "test"],
-  "extends": "expo/tsconfig.base"
+  "extends": "@react-native/typescript-config/tsconfig.json"
 }
