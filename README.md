@@ -1,5 +1,7 @@
 [![End the Palestinians Genocide](https://img.shields.io/badge/%F0%9F%87%B5%F0%9F%87%B8_End_the_Palestinians_Genocide-techforpalestine.org-000000?labelColor=009e53&color=D83838)](https://techforpalestine.org/learn-more)
 
+_🇵🇸 We stand with Palestine._
+
 # WRNS (Wich React Native Starter)
 
 🥤Just another boring bare React Native template.
@@ -8,7 +10,7 @@
 
 What makes this difference with other starter out there? It's name.
 
-- Latest version of React Native(v0.72) and Expo(v49)
+- Latest version of React Native(v0.73) and Expo(v50 Canary)
 - JavaScript? Nah, TypeScript ftw! 😏
 - Simple project structure 🏛
 - Carefully picked libraries 👍🏼
