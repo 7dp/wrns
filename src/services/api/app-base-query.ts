@@ -1,4 +1,4 @@
-import { Nums, baseUrl } from '@/config'
+import { Nums } from '@/config'
 import { CurrentRootState } from '@/store'
 import { authActions } from '@/store/slices'
 import {
@@ -9,6 +9,7 @@ import {
 } from '@reduxjs/toolkit/dist/query'
 import { MaybePromise } from '@reduxjs/toolkit/dist/query/tsHelpers'
 import { Mutex } from 'async-mutex'
+import Config from 'react-native-config'
 import { Endpoints } from './endpoints'
 
 const prepareHeaders:
@@ -25,7 +26,7 @@ const prepareHeaders:
 const mutex = new Mutex()
 
 const baseQuery = fetchBaseQuery({
-  baseUrl,
+  baseUrl: Config.BASE_URL,
   prepareHeaders,
   timeout: Nums.queryTimeoutInMilliseconds,
 })

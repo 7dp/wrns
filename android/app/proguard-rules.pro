@@ -8,3 +8,9 @@
 #   http://developer.android.com/guide/developing/tools/proguard.html
 
 # Add any project specific keep options here:
+
+# ReactNative Config.
+# Below u can replace `com.starter` with your own Production package-name.
+# And u can replace `com.starter.qa` with your own QA package-name.
+-keep class com.starter.BuildConfig { *; }
+-keep class com.starter.qa.BuildConfig { *; }
