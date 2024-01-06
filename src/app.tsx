@@ -5,6 +5,7 @@ import { NavigationContainer } from '@react-navigation/native'
 import { useKeepAwake } from 'expo-keep-awake'
 import React, { FC, useEffect } from 'react'
 import { ErrorBoundary } from 'react-error-boundary'
+import Config from 'react-native-config'
 import { KeyboardProvider } from 'react-native-keyboard-controller'
 import { SafeAreaProvider, initialWindowMetrics } from 'react-native-safe-area-context'
 import { enableScreens } from 'react-native-screens'
@@ -123,7 +124,7 @@ const App: FC<JSX.Element> = () => {
                 <StackNavigator />
                 <NetworkInfo />
                 <RNToast config={toastConfig} />
-                <ChuckerButton />
+                {Config.ENV === 'qa' && <ChuckerButton />}
               </NavigationContainer>
             </ErrorBoundary>
           </PersistGate>
