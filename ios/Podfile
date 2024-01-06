@@ -29,7 +29,7 @@ prepare_react_native_project!
 use_frameworks! :linkage => :static
 $RNFirebaseAsStaticFramework = true
 
-target 'Starter' do
+abstract_target 'common' do
   use_expo_modules!
   post_integrate do |installer|
     begin
@@ -50,6 +50,12 @@ target 'Starter' do
     # An absolute path to your application root.
     :app_path => "#{Pod::Config.instance.installation_root}/.."
   )
+
+  target 'Starter' do
+  end
+
+  target 'StarterQA' do
+  end
 
   target 'StarterTests' do
     inherit! :complete
