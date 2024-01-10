@@ -24,6 +24,7 @@ What makes this difference with other starter out there? It's name.
 - Absolute imports, obviously 😒
 - Yes, Internationalization, already provided using i18n-js. Though the default selected language is Indonesian 🌏
 - ESLint & Prettier, just so your code can become prettier 💅
+- Out of the box environment-variables and multiple-app-variants support ⚙️
 - Just go get started and you will see a lot, bcs a bit hard to explain here tho.
 
 ## Getting Started
