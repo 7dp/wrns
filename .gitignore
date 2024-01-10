@@ -68,3 +68,6 @@ yarn-error.log
 
 # Expo
 .expo
+
+# Env variables
+.env*

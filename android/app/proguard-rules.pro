@@ -8,3 +8,8 @@
 #   http://developer.android.com/guide/developing/tools/proguard.html
 
 # Add any project specific keep options here:
+
+# ReactNative Config.
+# Below u can replace `com.starter` with your package-name.
+-keep class com.starter.BuildConfig { *; }
+-keep class com.starter.qa.BuildConfig { *; }

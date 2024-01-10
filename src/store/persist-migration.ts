@@ -1,4 +1,4 @@
-import { baseUrlKey, Nums } from '@/config'
+import { Nums } from '@/config'
 import { createMigrate } from 'redux-persist'
 import { MigrationState } from './types'
 
@@ -28,7 +28,7 @@ const persistMigrations = {}
  * provided. Relying on type inference here would fail because it would assume {}.
  */
 const persistMigrate = createMigrate<MigrationState>(persistMigrations, {
-  debug: baseUrlKey !== 'LIVE',
+  debug: __DEV__,
 })
 
 const availableVersion = Object.keys(persistMigrations).map((i) => Number(i))
